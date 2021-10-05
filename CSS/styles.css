@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&family=EB+Garamond&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#navbar {
+    background-color: #BFA2DB;
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 2rem;
+    font-family: 'Bubbler One', sans-serif;
+}
+
+/*-----HEADER------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    height: 100vh;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+section h2{
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+header p {
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+header::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    background-color: #F0D9FF;
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+}
+
+section {
+    text-align: center;
+    padding: 3rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-tile {
+    max-width: 250px;
+    margin: 1rem;
+}
+
+.project-tile img {
+    max-width: 100%;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.links a {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+footer {
+    background-color: #7F7C82;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer:hover{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 400px) {
+    section {
+        padding: 2rem;
+    }
+}
